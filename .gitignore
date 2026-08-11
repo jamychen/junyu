@@ -2,14 +2,12 @@
 __pycache__/
 *.pyc
 *.pyo
-.venv/
-venv/
 
-# IDE
-.vscode/
-.idea/
+# 用户数据（笔记、进度，仅本地保存）
+data/notes.json
+data/progress.json
 
-# OS
-Thumbs.db
-Desktop.ini
-.DS_Store
+# 临时文件
+*.tmp
+*.bak
+~$*

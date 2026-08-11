@@ -1,0 +1,336 @@
+{
+  "subject": "英语",
+  "books": [
+    {
+      "name": "必修第一册",
+      "chapters": [
+        {
+          "id": "en_1_0",
+          "title": "Welcome Unit 初高中衔接",
+          "summary": "衔接初高中英语，复习基本句型结构、学习策略与校园生活词汇。",
+          "knowledge": [
+            {"title": "五大基本句型", "content": "①S+V（主谓）②S+V+O（主谓宾）③S+V+IO+DO（主谓双宾）④S+V+O+C（主谓宾补）⑤S+V+P（主系表）。分析句子先找谓语动词，再判断结构。"},
+            {"title": "校园生活词汇", "content": "campus 校园, lecture 讲座, registration 注册, dormitory 宿舍, exchange 交流, strategy 策略, flashcard 抽认卡, take notes 记笔记, concentrate on 专注。"},
+            {"title": "学习策略", "content": "扩大词汇量（构词法、语境记忆）；坚持听说读写训练；建立错题本；用英语记日记；利用词典与语料。"}
+          ],
+          "exam_points": [
+            {"title": "句型分析", "content": "判断句子结构，划分句子成分（主谓宾定状补表）。"},
+            {"title": "词义推断", "content": "阅读中通过构词法、上下文、同义反义推断生词含义。"}
+          ],
+          "examples": [
+            {"title": "句型判断", "question": "指出 \"She bought me a dictionary.\" 的句型。", "analysis": "bought 为谓语，me 为间接宾语，a dictionary 为直接宾语。", "answer": "S+V+IO+DO（主谓双宾结构）。"}
+          ]
+        },
+        {
+          "id": "en_1_1",
+          "title": "Unit 1 Teenage Life 青少年生活",
+          "summary": "话题：青少年生活与课外活动。语法：复习时态。写作：建议信。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "volunteer 志愿者, debate 辩论, prefer 更喜欢, suitable 合适的, challenge 挑战, schedule 日程, quit 放弃, responsible 负责任的, generation 一代人, attract 吸引, focus 集中, advance 进步。"},
+            {"title": "重点短语", "content": "prefer...to... 喜欢……胜过……, sign up for 报名参加, be suitable for 适合, focus on 集中于, be responsible for 对……负责, hand out 分发, be addicted to 沉迷于, get used to 习惯于。"},
+            {"title": "核心句型", "content": "①I prefer... to... ②The reason why... is that... ③It is + adj. + for sb. to do sth. ④You'd better (not) do...（表建议）。"},
+            {"title": "语法：复习时态", "content": "一般现在时表习惯真理；一般过去时表过去事实；现在进行时表进行；现在完成时表过去动作对现在的影响；一般将来时表将来。注意时间状语搭配与主从句时态呼应。"}
+          ],
+          "exam_points": [
+            {"title": "词汇与短语", "content": "prefer/preference 词形变化；be addicted to 后接动名词；focus 与 concentrate 辨析。"},
+            {"title": "时态", "content": "依据语境与时间状语选择正确时态，注意主从句时态一致。"},
+            {"title": "建议信写作", "content": "格式（称呼、正文、结尾）；常用句式 I suggest/recommend that..., It is advisable to..., Why not...?。"}
+          ],
+          "examples": [
+            {"title": "时态选择", "question": "用适当形式填空：He ______ (join) the chess club last term and ______ (be) a member ever since.", "analysis": "前句 last term 用一般过去时；后句 ever since 提示现在完成时。", "answer": "joined; has been。"},
+            {"title": "建议句式", "question": "翻译：我建议你报名参加辩论社。", "analysis": "suggest 后从句用 (should)+动词原形。", "answer": "I suggest that you (should) sign up for the debate club."}
+          ]
+        },
+        {
+          "id": "en_1_2",
+          "title": "Unit 2 Travelling Around 旅游",
+          "summary": "话题：旅游与目的地。语法：现在进行时表将来。写作：旅行计划/游记。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "destination 目的地, amazing 令人惊叹的, ancient 古老的, narrow 狭窄的, flight 航班, accommodation 住宿, unique 独特的, official 官方的, emperor 皇帝, site 遗址, economy 经济。"},
+            {"title": "重点短语", "content": "apply for 申请, take control of 控制, other than 除了, make up 构成/编造, check in 办理登记, check out 结账离开, be famous for 因……著名, package tour 跟团游。"},
+            {"title": "核心句型", "content": "①be doing sth. 表按计划即将发生 ②It is amazing that... ③主语 + be + to do（表计划安排）。"},
+            {"title": "语法：现在进行时表将来", "content": "come, go, arrive, leave, start, fly, travel 等位移动词的现在进行时可表示按计划即将发生的动作。如 I am leaving for Beijing tomorrow."}
+          ],
+          "exam_points": [
+            {"title": "现在进行时表将来", "content": "位移动词进行时表将来；与 be going to / be to do 的区别。"},
+            {"title": "词汇运用", "content": "amaze/amazed/amazing 辨析（-ing 修饰物，-ed 修饰人）；apply/application 词族。"},
+            {"title": "旅行计划写作", "content": "用现在进行时描述行程，条理清晰，包含交通、住宿、景点。"}
+          ],
+          "examples": [
+            {"title": "语法填空", "question": "My flight ______ (take off) at 9:00 tomorrow morning.", "analysis": "位移动词 take off 进行时表按计划将来。", "answer": "is taking off。"},
+            {"title": "词形辨析", "question": "用 amaze 适当形式填空：The view was ______ and we were ______ at it.", "analysis": "amazing 修饰物，amazed 修饰人。", "answer": "amazing; amazed。"}
+          ]
+        },
+        {
+          "id": "en_1_3",
+          "title": "Unit 3 Sports and Fitness 运动与健康",
+          "summary": "话题：体育运动与健康生活。语法：反意疑问句。写作：健康生活方式比较。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "fitness 健康, champion 冠军, determine 决心, injured 受伤的, captain 队长, graceful 优雅的, strength 力量, failure 失败, compete 竞争, pretend 假装, diet 饮食, balanced 平衡的。"},
+            {"title": "重点短语", "content": "make it 成功/赶到, work out 锻炼, give up 放弃, lose weight 减肥, rather than 而不是, cut out 戒除, compare...to... 把……比作, make a difference 起作用。"},
+            {"title": "核心句型", "content": "①Instead of doing..., sb. does... ②The more..., the more... ③It is up to sb. to do sth.。"},
+            {"title": "语法：反意疑问句", "content": "前肯后否、前否后肯；be/助/情态动词与主句一致。特殊情况：let's 用 shall we；祈使句用 will you；nothing/nobody 等否定词后用肯定；I think/believe 后反问与从句主语一致。"}
+          ],
+          "exam_points": [
+            {"title": "反意疑问句", "content": "依据主句谓语与否定词确定反问部分；特殊句型（let's, 祈使, 主从复合句）的用法。"},
+            {"title": "词汇辨析", "content": "compete/competition/competitive；injure/wound/hurt。"},
+            {"title": "健康话题写作", "content": "比较不同生活方式，提出建议，结构对比清晰。"}
+          ],
+          "examples": [
+            {"title": "反意疑问句", "question": "完成反意疑问句：He has never been to the gym, ______?", "analysis": "前句有 never 否定词，反问部分用肯定；谓语 has 为助动词。", "answer": "has he。"},
+            {"title": "句型翻译", "question": "翻译：你锻炼得越多，就越健康。", "analysis": "用 The more..., the more... 句型。", "answer": "The more you work out, the healthier you will be."}
+          ]
+        },
+        {
+          "id": "en_1_4",
+          "title": "Unit 4 Natural Disasters 自然灾害",
+          "summary": "话题：自然灾害与救援。语法：限制性定语从句（关系代词）。写作：灾害报道/新闻报道。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "disaster 灾难, earthquake 地震, rescue 救援, shelter 庇护所, survive 幸存, destroy 破坏, affect 影响, effort 努力, emergency 紧急情况, supply 供应, summary 摘要, significant 重大的。"},
+            {"title": "重点短语", "content": "in ruins 严重受损, as if 仿佛, come to an end 结束, in shock 震惊, dig out 掘出, sweep away 冲走, suffer from 遭受, provide sth. for sb. 为某人提供某物。"},
+            {"title": "核心句型", "content": "①It seemed as if... ②There were... doing sth. ③The number of... who/which...（定语从句）。"},
+            {"title": "语法：限制性定语从句（关系代词）", "content": "who 指人作主/宾，whom 指人作宾，which 指物，that 指人或物，whose 表所属（人/物均可）。作宾语可省略。that 与 which 区别：只用 that 的情况（最高级、序数词修饰、不定代词先行词、人和物并列先行词等）。"}
+          ],
+          "exam_points": [
+            {"title": "定语从句关系代词", "content": "选用正确关系代词；that 与 which 的辨析；whose 的用法。"},
+            {"title": "词汇运用", "content": "destroy/ruin/damage 辨析；survive/survival/survivor 词族。"},
+            {"title": "新闻写作", "content": "新闻要素（when/where/who/what/why/how）；语言客观简洁。"}
+          ],
+          "examples": [
+            {"title": "定语从句", "question": "用关系代词填空：The earthquake ______ struck the city caused great damage.", "analysis": "先行词 earthquake 指物，在从句中作主语，可用 that 或 which。", "answer": "that / which。"},
+            {"title": "that 与 which", "question": "This is the most terrible disaster ______ I have ever experienced.（填关系代词）", "analysis": "先行词被最高级修饰，只用 that。", "answer": "that。"}
+          ]
+        },
+        {
+          "id": "en_1_5",
+          "title": "Unit 5 Languages Around the World 世界语言",
+          "summary": "话题：世界语言与汉字发展。语法：限制性定语从句（关系副词与介词+关系代词）。写作：语言学习经验。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "symbol 符号, classic 经典的, regard 看作, variety 多样性, major 主要的, native 本地的, attitude 态度, official 官方的, appreciate 欣赏, demand 要求, vocabulary 词汇。"},
+            {"title": "重点短语", "content": "regard...as... 把……看作, refer to 指的是/提到, date back to 追溯到, be based on 基于, no matter 不管, point of view 观点, depend on 依赖。"},
+            {"title": "核心句型", "content": "①even though/if 即使 ②no matter + 疑问词 ③the way (in which/that) + 定语从句。"},
+            {"title": "语法：关系副词与介词+关系代词", "content": "when 表时间 (=at/in/on which)，where 表地点 (=in/at which)，why 表原因 (=for which)。介词+which/whom：根据动词搭配或先行词确定介词。关系副词可用 that 替换，作状语不可省略。"}
+          ],
+          "exam_points": [
+            {"title": "关系副词", "content": "区分关系代词与关系副词（看在从句中作主宾还是状语）；when/where/why 的选用。"},
+            {"title": "介词+关系代词", "content": "根据搭配确定介词；which 指物 whom 指人。"},
+            {"title": "词汇与句型", "content": "no matter 与 however 的转换；regard...as...。"}
+          ],
+          "examples": [
+            {"title": "关系副词", "question": "填空：This is the school ______ I studied for three years.", "analysis": "先行词 school 表地点，从句缺地点状语，用 where。", "answer": "where。"},
+            {"title": "介词+关系代词", "question": "填空：The person ______ ______ I talked is our English teacher.", "analysis": "talk to sb. 搭配，介词用 to，指人用 whom。", "answer": "to; whom。"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "必修第二册",
+      "chapters": [
+        {
+          "id": "en_2_1",
+          "title": "Unit 1 Cultural Heritage 文化遗产",
+          "summary": "话题：文化遗产保护（以阿斯旺大坝神庙搬迁为例）。语法：限制性定语从句（复习）。写作：保护文化遗产倡议。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "heritage 遗产, temple 寺庙, preserve 保护, promote 促进, balance 平衡, protest 抗议, committee 委员会, establish 建立, limit 限制, conduct 进行, document 文件/记录。"},
+            {"title": "重点短语", "content": "give way to 让步于, turn to 求助于, take apart 拆开, piece by piece 一块块地, contribute to 有助于, be likely to 可能, in turn 依次。"},
+            {"title": "核心句型", "content": "①Not only...but also...（部分倒装） ②There comes a time when... ③It is worthwhile to do...。"},
+            {"title": "语法：定语从句复习", "content": "综合运用关系代词与关系副词；非限制性定语从句初步认识（用逗号隔开，补充说明，不可用 that）。"}
+          ],
+          "exam_points": [
+            {"title": "定语从句综合", "content": "限制性与非限制性定语从句辨析；关系词选用与省略。"},
+            {"title": "倒装句", "content": "not only...but also 置于句首引起部分倒装。"},
+            {"title": "应用文写作", "content": "倡议书结构与呼吁句式。"}
+          ],
+          "examples": [
+            {"title": "倒装", "question": "用倒装改写：Not only ______ ______ (he/protect) the temple, but he also raised funds.", "analysis": "Not only 置于句首，主句部分倒装，用助动词 did。", "answer": "did he protect。"}
+          ]
+        },
+        {
+          "id": "en_2_2",
+          "title": "Unit 2 Wildlife Protection 野生动植物保护",
+          "summary": "话题：野生动植物保护。语法：现在进行时的被动语态。写作：保护动物短文。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "wildlife 野生动物, species 物种, endangered 濒危的, habitat 栖息地, reserve 保护区, adapt 适应, exist 存在, attack 攻击, recover 恢复, concern 担忧, harmony 和谐。"},
+            {"title": "重点短语", "content": "die out 灭绝, be concerned about 关心, adapt to 适应, under pressure 在压力下, be aware of 意识到, on average 平均, make progress 取得进步。"},
+            {"title": "核心句型", "content": "①...is being done（正在进行被动） ②It is high time that sb. did sth. ③Only by doing... can we...（部分倒装）。"},
+            {"title": "语法：现在进行时被动语态", "content": "结构 am/is/are + being + 过去分词，表示正在被进行的动作。如 The bridge is being built now. 注意：being 不可遗漏。"}
+          ],
+          "exam_points": [
+            {"title": "现在进行时被动", "content": "结构辨析与填空；与一般现在时被动、现在完成时被动的区别。"},
+            {"title": "词汇", "content": "adapt/adopt 辨析；die out/die of/die from 区别。"},
+            {"title": "倒装", "content": "only + 状语前置的部分倒装。"}
+          ],
+          "examples": [
+            {"title": "被动语态", "question": "填空：The old church ______ ______ ______ (repair) at present.", "analysis": "at present 提示现在进行，主语被修用被动。", "answer": "is being repaired。"},
+            {"title": "倒装", "question": "改写：Only by working together ______ ______ (we/save) these animals.", "analysis": "Only+状语前置引起部分倒装。", "answer": "can we save。"}
+          ]
+        },
+        {
+          "id": "en_2_3",
+          "title": "Unit 3 The Internet 互联网",
+          "summary": "话题：互联网与生活。语法：现在完成时的被动语态。写作：网络利弊议论文。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "convenient 方便的, benefit 利益, privacy 隐私, identity 身份, update 更新, confirm 确认, distance 距离, addicted 上瘾的, battery 电池, discount 折扣。"},
+            {"title": "重点短语", "content": "keep track of 跟踪, keep sb. company 陪伴, now that 既然, have access to 有权使用, in shape 状况良好, belong to 属于。"},
+            {"title": "核心句型", "content": "①...has/have been done（现在完成被动） ②It is the first time that...has/have done ③so...that...。"},
+            {"title": "语法：现在完成时被动语态", "content": "结构 has/have + been + 过去分词，表示过去已完成且对现在有影响的被动动作。如 The work has been finished."}
+          ],
+          "exam_points": [
+            {"title": "现在完成时被动", "content": "结构辨析；与一般过去时被动的区别（看是否对现在有影响）。"},
+            {"title": "议论文写作", "content": "利弊分析结构：引出话题—利—弊—结论；连接词 however, on the other hand, in addition。"},
+            {"title": "词汇辨析", "content": "benefit from/by；convenient 不能以人作主语。"}
+          ],
+          "examples": [
+            {"title": "被动语态", "question": "填空：All the tickets ______ ______ ______ (sell) online so far.", "analysis": "so far 提示现在完成，tickets 被售用被动。", "answer": "have been sold。"},
+            {"title": "时态句型", "question": "翻译：这是我第一次参观故宫。", "analysis": "It is the first time that... 后用现在完成时。", "answer": "It is the first time that I have visited the Palace Museum."}
+          ]
+        },
+        {
+          "id": "en_2_4",
+          "title": "Unit 4 History and Traditions 历史与传统",
+          "summary": "话题：英国历史与传统文化。语法：过去分词作定语和宾补。写作：地点/景点介绍。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "ancestor 祖先, philosopher 哲学家, individual 个人, belong 属于, evidence 证据, achieve 达到, generous 慷慨的, position 位置, fascinating 迷人的, landscape 风景。"},
+            {"title": "重点短语", "content": "belong to 属于, as well as 也, be proud of 以……为豪, break away from 脱离, result in 导致, leave behind 留下。"},
+            {"title": "核心句型", "content": "①过去分词短语作后置定语 ②have/get sth. done ③with + 宾语 + 过去分词（宾补）。"},
+            {"title": "语法：过去分词作定语与宾补", "content": "作定语：单个词前置（fallen leaves 落叶），短语后置（the book written by him）；及物动词过去分词表被动完成。作宾补：have/get sth. done（使某事被做），表状态或被动。"}
+          ],
+          "exam_points": [
+            {"title": "过去分词作定语", "content": "区分现在分词与过去分词作定语（主动进行 vs 被动完成）；位置。"},
+            {"title": "过去分词作宾补", "content": "have/get sth. done 结构；与 doing 宾补的区别。"},
+            {"title": "地点介绍写作", "content": "位置、历史、特色、感受；现在/过去分词丰富表达。"}
+          ],
+          "examples": [
+            {"title": "过去分词作定语", "question": "填空：The building ______ (build) in 1900 is still in use.", "analysis": "build 与 building 为被动关系，且已完成，用过去分词。", "answer": "built。"},
+            {"title": "宾补结构", "question": "翻译：我昨天让人修了电脑。", "analysis": "have sth. done 表使某事被做。", "answer": "I had the computer repaired yesterday."}
+          ]
+        },
+        {
+          "id": "en_2_5",
+          "title": "Unit 5 Music 音乐",
+          "summary": "话题：音乐与虚拟合唱团。语法：过去分词作状语。写作：音乐的影响短文。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "perform 表演, stage 舞台, award 奖项, composition 作品, capable 有能力的, phenomenon 现象, treatment 治疗, relief 缓解, thus 因此, equipment 设备。"},
+            {"title": "重点短语", "content": "fall in love with 爱上, be capable of 能够, in addition to 除……之外, take part in 参加, come up with 想出, from then on 从那时起。"},
+            {"title": "核心句型", "content": "①过去分词作状语（时间/原因/条件/让步） ②It is said that... ③Not only...but also...。"},
+            {"title": "语法：过去分词作状语", "content": "过去分词作状语表被动、完成，逻辑主语与主句主语一致。如 Given more time, I could do better. 否定用 Not given。注意与现在分词作状语区分（主动 vs 被动）。"}
+          ],
+          "exam_points": [
+            {"title": "过去分词作状语", "content": "判断分词与主语关系选 doing/done；分词作状语的否定与位置。"},
+            {"title": "词汇", "content": "perform/performance；award/reward 辨析。"},
+            {"title": "写作", "content": "用分词状语使句式多样。"}
+          ],
+          "examples": [
+            {"title": "分词作状语", "question": "填空：______ (give) another chance, he would succeed.", "analysis": "give 与 he 为被动关系，作条件状语用过去分词。", "answer": "Given。"},
+            {"title": "分词选择", "question": "填空：______ (face) with difficulties, she didn't give up.", "analysis": "be faced with 固定搭配，作状语用 faced。", "answer": "Faced。"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "必修第三册",
+      "chapters": [
+        {
+          "id": "en_3_1",
+          "title": "Unit 1 Festivals and Celebrations 节日",
+          "summary": "话题：世界节日与庆祝。语法：情态动词。写作：节日介绍。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "festival 节日, celebrate 庆祝, origin 起源, religious 宗教的, custom 习俗, gather 聚集, feast 盛宴, gratitude 感激, joy 喜悦, decorate 装饰, symbol 象征。"},
+            {"title": "重点短语", "content": "in spite of 尽管, range from...to... 范围从……到……, dress up 打扮, after all 毕竟, be grateful for 感激, figure out 弄明白。"},
+            {"title": "核心句型", "content": "①情态动词表能力、许可、必须、建议 ②No matter how... ③It is a time when...。"},
+            {"title": "语法：情态动词", "content": "can/could 表能力或许可；may/might 表许可或推测；must 表必须（否定 needn't 不必）；should/ought to 表建议；shall 表征求意见或命令；will/would 表意愿。推测：must be 一定是，can't be 不可能是。"}
+          ],
+          "exam_points": [
+            {"title": "情态动词", "content": "基本用法与辨析；表推测的用法（must/can't/may）；must 与 have to 的区别。"},
+            {"title": "词汇", "content": "celebrate/celebration；custom/habit 辨析。"},
+            {"title": "节日介绍写作", "content": "时间、起源、活动、意义。"}
+          ],
+          "examples": [
+            {"title": "情态动词", "question": "填空：You ______ not park here; it's forbidden.", "analysis": "禁止停车，表必须不，用 must。", "answer": "must。"},
+            {"title": "推测", "question": "改写：I'm sure he is the thief. → He ______ be the thief.", "analysis": "肯定推测用 must。", "answer": "must。"}
+          ]
+        },
+        {
+          "id": "en_3_2",
+          "title": "Unit 2 Morals and Virtues 道德与美德",
+          "summary": "话题：道德困境与美德（以林巧稚为例）。语法：情态动词表推测。写作：美德故事/观点。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "moral 道德的, virtue 美德, dilemma 困境, faint 晕倒, complain 抱怨, respond 回应, reject 拒绝, tend 照顾, retire 退休, principle 原则, significant 重要的。"},
+            {"title": "重点短语", "content": "carry sb. through 帮某人渡过难关, in trouble 处于困境, be known for 因……闻名, first aid 急救, in despair 绝望, be responsible for 对……负责。"},
+            {"title": "核心句型", "content": "①情态动词表推测（must/may/might/can't + do/be doing/have done） ②It is worthwhile to do... ③Rather than..., sb. did...。"},
+            {"title": "语法：情态动词表推测", "content": "肯定推测 must（一定）、may/might（可能）；否定推测 can't（不可能）。对现在推测 + do/be doing，对过去推测 + have done。如 He must have finished it yesterday."}
+          ],
+          "exam_points": [
+            {"title": "情态动词表推测", "content": "依据肯定/否定选 must/can't/may；时态搭配（have done 表过去）。"},
+            {"title": "词汇", "content": "respond/response；reject/refuse 辨析。"},
+            {"title": "写作", "content": "叙述美德故事，夹叙夹议。"}
+          ],
+          "examples": [
+            {"title": "推测过去", "question": "填空：The ground is wet. It ______ ______ rained last night.", "analysis": "对过去肯定推测用 must have done。", "answer": "must have。"},
+            {"title": "否定推测", "question": "填空：He ______ be at home; I just saw him at school.", "分析": "否定推测用 can't。", "answer": "can't。"}
+          ]
+        },
+        {
+          "id": "en_3_3",
+          "title": "Unit 3 Diverse Cultures 多元文化",
+          "summary": "话题：多元文化（以旧金山为例）。语法：it 的用法。写作：城市/文化介绍。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "diverse 多样的, fortune 财富, immigrant 移民, contain 包含, district 地区, material 材料, construction 建设, definitely 肯定地, historical 历史的, diverse 不同的。"},
+            {"title": "重点短语", "content": "head to 前往, seek one's fortune 寻找发财机会, a variety of 各种, bring about 引起, apart from 除了, settle in 定居于。"},
+            {"title": "核心句型", "content": "①It is + adj./n. + that... ②It takes sb. time to do... ③It is... that...（强调句）。"},
+            {"title": "语法：it 的用法", "content": "it 作形式主语（It is said that...）、形式宾语（find it hard to...）；强调句 It is/was + 强调部分 + that...；指代时间、天气、距离。判断强调句：去掉 It is/was...that 后句子仍完整。"}
+          ],
+          "exam_points": [
+            {"title": "it 用法", "content": "形式主语/宾语；强调句判断与改写；与定语从句区分。"},
+            {"title": "词汇", "content": "diverse/diversity；contain/include 辨析。"},
+            {"title": "文化介绍写作", "content": "特点、成因、表现、感受。"}
+          ],
+          "examples": [
+            {"title": "强调句", "question": "对画线部分强调：I met Tom in the park yesterday.（强调 in the park）", "分析": "强调句结构 It is/was + 强调部分 + that + 其余。", "answer": "It was in the park that I met Tom yesterday."},
+            {"title": "形式宾语", "question": "填空：I find ______ important to learn English well.", "分析": "it 作形式宾语，真正宾语为 to do。", "answer": "it。"}
+          ]
+        },
+        {
+          "id": "en_3_4",
+          "title": "Unit 4 Space Exploration 太空探索",
+          "summary": "话题：太空探索历程。语法：不定式。写作：太空探索意义议论文。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "explore 探索, launch 发射, astronaut 宇航员, signal 信号, intelligent 智能的, determine 决心, independent 独立的, limited 有限的, vital 至关重要的, mystery 谜。"},
+            {"title": "重点短语", "content": "carry on 继续, on board 在船上/机上, as a result 结果, provide for 供养, in closing 最后, run out 用完。"},
+            {"title": "核心句型", "content": "①It is + adj. + for sb. to do ②To do... is...（不定式作主语） ③so as to / in order to 表目的。"},
+            {"title": "语法：不定式", "content": "不定式作主语（常以 it 作形式主语）、宾语、表语、定语（表将来）、状语（表目的、结果）。否定 not to do。注意：decide/hope/plan + to do；make up one's mind to do。"}
+          ],
+          "exam_points": [
+            {"title": "不定式", "content": "作各成分的辨析；不定式作定语与状语；to do 与 doing 区别。"},
+            {"title": "词汇", "content": "explore/exploration；determined/determine。"},
+            {"title": "议论文写作", "content": "明确观点，论据充分，逻辑清晰。"}
+          ],
+          "examples": [
+            {"title": "不定式作主语", "question": "改写：To master a language is necessary. → It is necessary ______.", "分析": "it 作形式主语，不定式后置。", "answer": "to master a language。"},
+            {"title": "不定式作目的状语", "question": "翻译：他早起是为了赶上首班车。", "分析": "表目的用不定式。", "answer": "He got up early to catch the first bus."}
+          ]
+        },
+        {
+          "id": "en_3_5",
+          "title": "Unit 5 The Value of Money 金钱的价值",
+          "summary": "话题：金钱的价值（以《百万英镑》为例）。语法：复习情态动词与不定式。写作：金钱观讨论/剧本片段。",
+          "knowledge": [
+            {"title": "重点词汇", "content": "value 价值, basis 基础, apologise 道歉, spot 发现, patience 耐心, manner 方式/礼貌, permission 允许, indeed 确实, hesitate 犹豫, reserve 预订。"},
+            {"title": "重点短语", "content": "as a matter of fact 事实上, on the basis of 在……基础上, take out a loan 贷款, in return 作为回报, be about to do 即将做, to be honest 老实说。"},
+            {"title": "核心句型", "content": "①be about to do... when... ②It is up to sb. to do ③情态动词 + have done（表对过去的推测或责备）。"},
+            {"title": "语法：复习情态动词与不定式", "content": "should have done 本该做却没做；ought to have done；could have done 本可以做；needn't have done 本不必做。不定式综合运用。"}
+          ],
+          "exam_points": [
+            {"title": "情态动词+have done", "content": "表责备/推测/虚拟的辨析；should/could/needn't have done。"},
+            {"title": "词汇", "content": "value/valuable；manner(s) 单复数含义。"},
+            {"title": "写作", "content": "金钱观议论；剧本对白格式。"}
+          ],
+          "examples": [
+            {"title": "情态动词+have done", "question": "填空：You ______ ______ (not/hurry); we still have plenty of time.", "分析": "本不必做用 needn't have done。", "answer": "needn't have hurried。"},
+            {"title": "句型", "question": "翻译：我刚要出门，这时电话响了。", "分析": "be about to do... when... 句型。", "answer": "I was about to go out when the phone rang."}
+          ]
+        }
+      ]
+    }
+  ]
+}
