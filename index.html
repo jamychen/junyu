@@ -123,6 +123,79 @@ a{color:var(--blue)}
 .note-card .nc-time{font-size:11px;color:var(--muted);margin-top:4px}
 .mark-btn{display:inline-block;margin:8px 0;padding:7px 14px;border-radius:20px;border:1px solid var(--blue);background:#fff;color:var(--blue);font-size:13px;cursor:pointer}
 .mark-btn.on{background:var(--green);color:#fff;border-color:var(--green)}
+/* === 错题本 === */
+.wb-fab{position:fixed;right:14px;bottom:16px;z-index:15;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff;border:0;font-size:24px;cursor:pointer;box-shadow:0 3px 10px rgba(192,57,43,.4);display:flex;align-items:center;justify-content:center}
+.wb-fab:active{transform:scale(.92)}
+.wb-overlay{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;flex-direction:column}
+.wb-overlay.show{display:flex}
+.wb-bar{background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff;padding:10px 12px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.wb-bar .wb-back{font-size:20px;background:none;border:0;color:#fff;cursor:pointer;padding:4px 8px}
+.wb-bar .wb-title{font-size:17px;font-weight:700;flex:1}
+.wb-bar .wb-btn{background:rgba(255,255,255,.2);border:0;color:#fff;border-radius:6px;padding:6px 10px;font-size:13px;cursor:pointer}
+.wb-bar .wb-btn:active{background:rgba(255,255,255,.35)}
+.wb-body{flex:1;overflow-y:auto;padding:12px 14px 80px}
+.wb-empty{text-align:center;color:var(--muted);padding:60px 20px}
+.wb-empty .icon{font-size:48px;margin-bottom:12px}
+.wb-add{position:fixed;bottom:20px;right:14px;z-index:16;width:56px;height:56px;border-radius:50%;background:#e74c3c;color:#fff;border:0;font-size:28px;cursor:pointer;box-shadow:0 3px 12px rgba(231,76,60,.4)}
+.wb-add:active{transform:scale(.92)}
+.wb-card{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.wb-card .wb-thumb{width:100%;height:160px;object-fit:cover;background:#f5f5f5;cursor:pointer}
+.wb-card .wb-info{padding:10px 12px}
+.wb-card .wb-info-t{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px}
+.wb-card .wb-subj-tag{font-size:12px;color:#fff;padding:1px 8px;border-radius:10px}
+.wb-card .wb-diff-tag{font-size:12px;padding:1px 8px;border-radius:10px;color:#fff;font-weight:700}
+.wb-card .wb-diff-tag.基础{background:#4caf50}
+.wb-card .wb-diff-tag.中等{background:#2196f3}
+.wb-card .wb-diff-tag.较难{background:#ff9800}
+.wb-card .wb-diff-tag.困难{background:#f44336}
+.wb-card .wb-card-title{font-weight:700;font-size:15px;margin:4px 0}
+.wb-card .wb-card-note{font-size:13px;color:#666;line-height:1.7}
+.wb-card .wb-card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:12px;color:var(--muted)}
+.wb-card .wb-card-actions{display:flex;gap:8px}
+.wb-card .wb-card-actions button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;color:#555}
+.wb-card .wb-card-actions .del{color:#e55;border-color:#fcc}
+.wb-card .wb-solved{color:var(--green);font-size:12px;font-weight:700}
+/* 错题表单 */
+.wb-form{background:#fff;border-radius:12px;padding:16px;margin-bottom:14px}
+.wb-form h3{margin:0 0 12px;font-size:17px;color:var(--text)}
+.wb-form .wb-photo-area{border:2px dashed var(--line);border-radius:10px;height:180px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden;position:relative;cursor:pointer;background:#fafbfc}
+.wb-form .wb-photo-area.has-img{border-style:solid}
+.wb-form .wb-photo-area img{width:100%;height:100%;object-fit:cover}
+.wb-form .wb-photo-area .wb-photo-tip{text-align:center;color:var(--muted);font-size:14px}
+.wb-form .wb-photo-area .wb-photo-tip .icon{font-size:36px;display:block;margin-bottom:6px}
+.wb-form .wb-field{margin-bottom:10px}
+.wb-form .wb-field label{display:block;font-size:13px;color:#666;margin-bottom:4px;font-weight:600}
+.wb-form .wb-field select,.wb-form .wb-field input,.wb-form .wb-field textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:15px;outline:none;font-family:inherit}
+.wb-form .wb-field select:focus,.wb-form .wb-field input:focus,.wb-form .wb-field textarea:focus{border-color:var(--blue)}
+.wb-form .wb-field textarea{min-height:80px;resize:vertical}
+.wb-form .wb-actions{display:flex;gap:10px;margin-top:14px}
+.wb-form .wb-actions button{flex:1;border:0;border-radius:8px;padding:12px;font-size:15px;font-weight:700;cursor:pointer}
+.wb-form .wb-save{background:#e74c3c;color:#fff}
+.wb-form .wb-cancel{background:#f5f5f5;color:#666}
+/* 详情查看 */
+.wb-detail{background:#fff;border-radius:12px;padding:14px;margin-bottom:14px}
+.wb-detail img{width:100%;border-radius:8px;margin-bottom:12px}
+.wb-detail .wb-d-section{margin:10px 0;padding:10px 12px;border-radius:8px;font-size:14px;line-height:1.85}
+.wb-detail .wb-d-section.wb-d-note{background:#fff8e1;border-left:3px solid #ffc107}
+.wb-detail .wb-d-section.wb-d-sol{background:#e8f5e9;border-left:3px solid #4caf50}
+.wb-detail .wb-d-label{font-weight:700;font-size:13px;margin-right:4px}
+/* 设置弹窗 */
+.wb-settings{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;padding:20px}
+.wb-settings.show{display:flex}
+.wb-settings .wb-set-box{background:#fff;border-radius:14px;padding:20px;max-width:420px;width:100%;max-height:90vh;overflow-y:auto}
+.wb-settings h3{margin:0 0 12px;font-size:18px}
+.wb-settings .wb-set-tip{font-size:13px;color:#888;line-height:1.7;margin-bottom:12px;background:#f5f7fa;padding:10px 12px;border-radius:8px}
+.wb-settings .wb-set-tip a{color:var(--blue)}
+.wb-settings .wb-field{margin-bottom:10px}
+.wb-settings .wb-field label{display:block;font-size:13px;color:#666;margin-bottom:4px;font-weight:600}
+.wb-settings .wb-field input{width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px;outline:none;font-family:monospace}
+.wb-settings .wb-actions{display:flex;gap:10px;margin-top:16px}
+.wb-settings .wb-actions button{flex:1;border:0;border-radius:8px;padding:11px;font-size:15px;font-weight:700;cursor:pointer}
+.wb-settings .wb-ok{background:var(--blue);color:#fff}
+.wb-settings .wb-no{background:#f5f5f5;color:#666}
+.wb-sync-status{font-size:12px;color:var(--muted);text-align:center;padding:8px}
+.wb-sync-status.ok{color:var(--green)}
+.wb-sync-status.err{color:var(--red)}
 /* 搜索结果 */
 .sr-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer}
 .sr-card:active{background:#eef3fb}
@@ -158,8 +231,112 @@ a{color:var(--blue)}
       <li>切换「知识点/考点/例题/真题/笔记」</li>
       <li>顶部搜索可跨科检索</li>
       <li>可标记已学习、做笔记</li>
+      <li>右下角 📝 错题本：拍照收集难题，云端备份</li>
     </ul>
     <p style="color:var(--muted);font-size:13px">点击左上角菜单选择章节开始学习</p>
+  </div>
+</div>
+
+<!-- 错题本悬浮按钮 -->
+<button class="wb-fab" onclick="wbOpen()">📝</button>
+
+<!-- 错题本主界面 -->
+<div class="wb-overlay" id="wbOverlay">
+  <div class="wb-bar">
+    <button class="wb-back" onclick="wbClose()">←</button>
+    <span class="wb-title">错题本</span>
+    <button class="wb-btn" onclick="wbSyncDown()">⬇ 恢复</button>
+    <button class="wb-btn" onclick="wbSyncUp()">⬆ 备份</button>
+    <button class="wb-btn" onclick="wbShowSettings()">⚙</button>
+  </div>
+  <div class="wb-body" id="wbBody"></div>
+  <button class="wb-add" onclick="wbShowForm()">+</button>
+</div>
+
+<!-- 错题表单 -->
+<div class="wb-overlay" id="wbFormOverlay" style="z-index:55">
+  <div class="wb-bar">
+    <button class="wb-back" onclick="wbHideForm()">←</button>
+    <span class="wb-title">添加错题</span>
+  </div>
+  <div class="wb-body">
+    <div class="wb-form">
+      <div class="wb-photo-area" id="wbPhotoArea" onclick="document.getElementById('wbFileInput').click()">
+        <div class="wb-photo-tip" id="wbPhotoTip">
+          <span class="icon">📷</span>
+          点击拍照或选择图片
+        </div>
+      </div>
+      <input type="file" id="wbFileInput" accept="image/*" capture="environment" style="display:none" onchange="wbOnFileSelect(event)">
+      <div class="wb-field">
+        <label>科目</label>
+        <select id="wbFSubject">
+          <option value="">选择科目</option>
+          <option value="数学">数学</option>
+          <option value="物理">物理</option>
+          <option value="化学">化学</option>
+          <option value="生物">生物</option>
+          <option value="语文">语文</option>
+          <option value="英语">英语</option>
+          <option value="其他">其他</option>
+        </select>
+      </div>
+      <div class="wb-field">
+        <label>标题（简述题目）</label>
+        <input type="text" id="wbFTitle" placeholder="如：函数求值域问题">
+      </div>
+      <div class="wb-field">
+        <label>难度</label>
+        <select id="wbFDifficulty">
+          <option value="基础">基础</option>
+          <option value="中等" selected>中等</option>
+          <option value="较难">较难</option>
+          <option value="困难">困难</option>
+        </select>
+      </div>
+      <div class="wb-field">
+        <label>笔记（可选）</label>
+        <textarea id="wbFNotes" placeholder="记录错因、知识点、解题思路等"></textarea>
+      </div>
+      <div class="wb-actions">
+        <button class="wb-cancel" onclick="wbHideForm()">取消</button>
+        <button class="wb-save" onclick="wbSaveProblem()">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 错题详情 -->
+<div class="wb-overlay" id="wbDetailOverlay" style="z-index:55">
+  <div class="wb-bar">
+    <button class="wb-back" onclick="wbHideDetail()">←</button>
+    <span class="wb-title">错题详情</span>
+    <button class="wb-btn" onclick="wbEditSolve()">✏ 标记已解决</button>
+  </div>
+  <div class="wb-body" id="wbDetailBody"></div>
+</div>
+
+<!-- 设置弹窗 -->
+<div class="wb-settings" id="wbSettings">
+  <div class="wb-set-box">
+    <h3>⚙ 云端同步设置</h3>
+    <div class="wb-set-tip">
+      输入你的 GitHub Personal Access Token，用于备份和恢复错题。<br>
+      <b>Token 创建方法：</b>GitHub → Settings → Developer settings → Personal access tokens → Generate new token → 勾选 repo → 生成<br>
+      Token 只保存在你的手机浏览器中，不会泄露给他人。
+    </div>
+    <div class="wb-field">
+      <label>GitHub Token</label>
+      <input type="text" id="wbTokenInput" placeholder="ghp_..." autocomplete="off">
+    </div>
+    <div class="wb-field">
+      <label>仓库名（默认 jamychen/junyu）</label>
+      <input type="text" id="wbRepoInput" placeholder="用户名/仓库名" value="jamychen/junyu">
+    </div>
+    <div class="wb-actions">
+      <button class="wb-no" onclick="wbHideSettings()">取消</button>
+      <button class="wb-ok" onclick="wbSaveSettings()">保存</button>
+    </div>
   </div>
 </div>
 
@@ -472,6 +649,337 @@ renderTree();
 updateProg();
 const firstSubj = document.getElementById('subj0');
 if(firstSubj) firstSubj.classList.add('open');
+
+/* ==================== 错题本功能 ==================== */
+// --- IndexedDB 封装 ---
+let wbDbReady = null;
+function wbDB(){
+  if(wbDbReady) return wbDbReady;
+  wbDbReady = new Promise((resolve,reject)=>{
+    const req = indexedDB.open('wrongbook_db',1);
+    req.onupgradeneeded = e=>{
+      const db = e.target.result;
+      if(!db.objectStoreNames.contains('problems')){
+        db.createObjectStore('problems',{keyPath:'id'});
+      }
+    };
+    req.onsuccess = e=>resolve(e.target.result);
+    req.onerror = e=>reject(e.target.error);
+  });
+  return wbDbReady;
+}
+async function wbDBAll(){
+  const db = await wbDB();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('problems','readonly');
+    const req = tx.objectStore('problems').getAll();
+    req.onsuccess = ()=>resolve(req.result||[]);
+    req.onerror = ()=>reject(req.error);
+  });
+}
+async function wbDBPut(item){
+  const db = await wbDB();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('problems','readwrite');
+    tx.objectStore('problems').put(item);
+    tx.oncomplete = ()=>resolve();
+    tx.onerror = ()=>reject(tx.error);
+  });
+}
+async function wbDBDel(id){
+  const db = await wbDB();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('problems','readwrite');
+    tx.objectStore('problems').delete(id);
+    tx.oncomplete = ()=>resolve();
+    tx.onerror = ()=>reject(tx.error);
+  });
+}
+async function wbDBClear(){
+  const db = await wbDB();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('problems','readwrite');
+    tx.objectStore('problems').clear();
+    tx.oncomplete = ()=>resolve();
+    tx.onerror = ()=>reject(tx.error);
+  });
+}
+
+// --- 图片压缩 ---
+function wbCompress(file, maxW, quality){
+  return new Promise((resolve,reject)=>{
+    const reader = new FileReader();
+    reader.onload = e=>{
+      const img = new Image();
+      img.onload = ()=>{
+        let w = img.width, h = img.height;
+        if(w > maxW){ h = Math.round(h * maxW / w); w = maxW; }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+// --- GitHub API ---
+function wbGH(){
+  const token = LS.get('wb_token','');
+  const repo = LS.get('wb_repo','jamychen/junyu');
+  return {token, repo, has: !!token};
+}
+async function wbGHUpload(dataStr, msg){
+  const {token, repo} = wbGH();
+  if(!token) throw new Error('未设置 Token');
+  const b64 = btoa(unescape(encodeURIComponent(dataStr)));
+  const headers = {'Authorization':`token ${token}`,'Accept':'application/vnd.github.v3+json','User-Agent':'wrongbook'};
+  // 获取当前 ref
+  const r1 = await fetch(`https://api.github.com/repos/${repo}/git/refs/heads/master`,{headers});
+  if(!r1.ok) throw new Error('获取分支失败: '+r1.status);
+  const ref = await r1.json();
+  const commitSha = ref.object.sha;
+  // 获取 commit 的 tree
+  const r2 = await fetch(`https://api.github.com/repos/${repo}/git/commits/${commitSha}`,{headers});
+  const commit = await r2.json();
+  const baseTree = commit.tree.sha;
+  // 创建 blob
+  const r3 = await fetch(`https://api.github.com/repos/${repo}/git/blobs`,{
+    method:'POST', headers:{...headers,'Content-Type':'application/json'},
+    body: JSON.stringify({content:b64, encoding:'base64'})
+  });
+  if(!r3.ok) throw new Error('创建 blob 失败: '+r3.status);
+  const blob = await r3.json();
+  // 创建 tree
+  const r4 = await fetch(`https://api.github.com/repos/${repo}/git/trees`,{
+    method:'POST', headers:{...headers,'Content-Type':'application/json'},
+    body: JSON.stringify({base_tree:baseTree, tree:[{path:'wrong_problems/data.json',mode:'100644',type:'blob',sha:blob.sha}]})
+  });
+  if(!r4.ok) throw new Error('创建 tree 失败: '+r4.status);
+  const tree = await r4.json();
+  // 创建 commit
+  const r5 = await fetch(`https://api.github.com/repos/${repo}/git/commits`,{
+    method:'POST', headers:{...headers,'Content-Type':'application/json'},
+    body: JSON.stringify({message:msg, tree:tree.sha, parents:[commitSha]})
+  });
+  if(!r5.ok) throw new Error('创建 commit 失败: '+r5.status);
+  const newCommit = await r5.json();
+  // 更新 ref
+  const r6 = await fetch(`https://api.github.com/repos/${repo}/git/refs/heads/master`,{
+    method:'PATCH', headers:{...headers,'Content-Type':'application/json'},
+    body: JSON.stringify({sha:newCommit.sha})
+  });
+  if(!r6.ok) throw new Error('更新分支失败: '+r6.status);
+  return true;
+}
+async function wbGHDownload(){
+  const {token, repo} = wbGH();
+  if(!token) throw new Error('未设置 Token');
+  const headers = {'Authorization':`token ${token}`,'Accept':'application/vnd.github.v3+json','User-Agent':'wrongbook'};
+  const r = await fetch(`https://api.github.com/repos/${repo}/contents/wrong_problems/data.json`,{headers});
+  if(r.status === 404) return null;
+  if(!r.ok) throw new Error('下载失败: '+r.status);
+  const data = await r.json();
+  const b64 = data.content.replace(/\n/g,'');
+  const text = decodeURIComponent(escape(atob(b64)));
+  return JSON.parse(text);
+}
+
+// --- 错题本 UI ---
+let wbPhotoData = null; // 当前选中的图片 base64
+const WB_SUBJECT_COLORS = {'数学':'#3a76d8','物理':'#2e8b57','化学':'#c0392b','生物':'#16a085','语文':'#b85450','英语':'#6a4ca0','其他':'#888'};
+const wbNow = ()=>{const d=new Date();const p=n=>String(n).padStart(2,'0');return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;};
+
+function wbOpen(){
+  document.getElementById('wbOverlay').classList.add('show');
+  wbRenderList();
+}
+function wbClose(){
+  document.getElementById('wbOverlay').classList.remove('show');
+}
+function wbShowForm(){
+  wbPhotoData = null;
+  document.getElementById('wbPhotoArea').classList.remove('has-img');
+  document.getElementById('wbPhotoArea').innerHTML = '<div class="wb-photo-tip"><span class="icon">📷</span>点击拍照或选择图片</div>';
+  document.getElementById('wbFSubject').value = '';
+  document.getElementById('wbFTitle').value = '';
+  document.getElementById('wbFDifficulty').value = '中等';
+  document.getElementById('wbFNotes').value = '';
+  document.getElementById('wbFormOverlay').classList.add('show');
+}
+function wbHideForm(){
+  document.getElementById('wbFormOverlay').classList.remove('show');
+}
+async function wbOnFileSelect(e){
+  const file = e.target.files[0];
+  if(!file) return;
+  try{
+    wbPhotoData = await wbCompress(file, 1000, 0.7);
+    const area = document.getElementById('wbPhotoArea');
+    area.classList.add('has-img');
+    area.innerHTML = `<img src="${wbPhotoData}">`;
+  }catch(err){
+    alert('图片处理失败: '+err.message);
+  }
+  e.target.value = '';
+}
+async function wbSaveProblem(){
+  if(!wbPhotoData){ alert('请先拍照或选择图片'); return; }
+  const subj = document.getElementById('wbFSubject').value;
+  if(!subj){ alert('请选择科目'); return; }
+  const title = document.getElementById('wbFTitle').value.trim() || '未命名题目';
+  const diff = document.getElementById('wbFDifficulty').value;
+  const notes = document.getElementById('wbFNotes').value.trim();
+  const item = {
+    id: 'wb_' + Date.now().toString(36) + Math.random().toString(36).slice(2,6),
+    subject: subj, title, difficulty: diff, notes,
+    photo: wbPhotoData, solved: false,
+    created_at: wbNow()
+  };
+  await wbDBPut(item);
+  wbHideForm();
+  wbRenderList();
+  // 自动备份
+  if(wbGH().has) wbSyncUp(true);
+}
+async function wbRenderList(){
+  const items = await wbDBAll();
+  items.sort((a,b)=> (b.created_at||'').localeCompare(a.created_at||''));
+  const body = document.getElementById('wbBody');
+  if(items.length === 0){
+    body.innerHTML = '<div class="wb-empty"><div class="icon">📝</div><p>错题本还是空的<br>点击右下角 + 拍照添加错题</p></div>';
+    return;
+  }
+  let html = '';
+  for(const it of items){
+    const color = WB_SUBJECT_COLORS[it.subject] || '#888';
+    const thumb = it.photo ? `<img class="wb-thumb" src="${it.photo}" onclick="wbViewDetail('${it.id}')">` : '';
+    const solved = it.solved ? '<span class="wb-solved">✓ 已解决</span>' : '';
+    html += `<div class="wb-card">
+      ${thumb}
+      <div class="wb-info">
+        <div class="wb-info-t">
+          <span class="wb-subj-tag" style="background:${color}">${esc(it.subject)}</span>
+          <span class="wb-diff-tag ${esc(it.difficulty||'中等')}">${esc(it.difficulty||'中等')}</span>
+          ${solved}
+        </div>
+        <div class="wb-card-title">${esc(it.title)}</div>
+        ${it.notes ? `<div class="wb-card-note">${esc(it.notes).replace(/\n/g,'<br>')}</div>` : ''}
+        <div class="wb-card-meta">
+          <span>${esc(it.created_at||'')}</span>
+          <div class="wb-card-actions">
+            <button onclick="wbViewDetail('${it.id}')">查看</button>
+            <button class="del" onclick="wbDelete('${it.id}')">删除</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }
+  body.innerHTML = html;
+}
+async function wbViewDetail(id){
+  const items = await wbDBAll();
+  const it = items.find(x=>x.id===id);
+  if(!it) return;
+  const color = WB_SUBJECT_COLORS[it.subject] || '#888';
+  const body = document.getElementById('wbDetailBody');
+  let html = `<div class="wb-detail">
+    <img src="${it.photo}" style="width:100%;border-radius:8px;margin-bottom:12px">
+    <div class="wb-info-t" style="margin-bottom:8px">
+      <span class="wb-subj-tag" style="background:${color}">${esc(it.subject)}</span>
+      <span class="wb-diff-tag ${esc(it.difficulty||'中等')}">${esc(it.difficulty||'中等')}</span>
+      ${it.solved ? '<span class="wb-solved">✓ 已解决</span>' : ''}
+    </div>
+    <div class="wb-card-title" style="font-size:17px;margin-bottom:8px">${esc(it.title)}</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:10px">📅 ${esc(it.created_at||'')}</div>`;
+  if(it.notes){
+    html += `<div class="wb-d-section wb-d-note"><span class="wb-d-label">📝 笔记：</span>${esc(it.notes).replace(/\n/g,'<br>')}</div>`;
+  }
+  if(it.solution){
+    html += `<div class="wb-d-section wb-d-sol"><span class="wb-d-label">💡 解题思路：</span>${esc(it.solution).replace(/\n/g,'<br>')}</div>`;
+  }
+  html += `<div style="margin-top:14px;display:flex;gap:10px">
+    <button class="wb-cancel" style="flex:1;border:1px solid var(--line);background:#fff;border-radius:8px;padding:10px;font-size:14px;cursor:pointer" onclick="wbDelete('${id}')">🗑 删除</button>
+    <button class="wb-save" style="flex:1;border:0;background:#e74c3c;color:#fff;border-radius:8px;padding:10px;font-size:14px;cursor:pointer" onclick="wbEditSolve('${id}')">${it.solved?'↩ 标记未解决':'✓ 标记已解决'}</button>
+  </div>`;
+  html += `<div style="margin-top:12px;font-size:13px;color:var(--muted);text-align:center;padding:8px;background:#f5f7fa;border-radius:8px">需要解题帮助？把题目照片发到 AI 对话中，获取详细解析</div>`;
+  html += '</div>';
+  body.innerHTML = html;
+  document.getElementById('wbDetailOverlay').classList.add('show');
+}
+function wbHideDetail(){
+  document.getElementById('wbDetailOverlay').classList.remove('show');
+}
+async function wbEditSolve(id){
+  const items = await wbDBAll();
+  const it = items.find(x=>x.id===id);
+  if(!it) return;
+  it.solved = !it.solved;
+  await wbDBPut(it);
+  wbHideDetail();
+  wbRenderList();
+}
+async function wbDelete(id){
+  if(!confirm('确定删除这道错题？')) return;
+  await wbDBDel(id);
+  wbHideDetail();
+  wbRenderList();
+  if(wbGH().has) wbSyncUp(true);
+}
+
+// --- 设置 ---
+function wbShowSettings(){
+  document.getElementById('wbTokenInput').value = LS.get('wb_token','');
+  document.getElementById('wbRepoInput').value = LS.get('wb_repo','jamychen/junyu');
+  document.getElementById('wbSettings').classList.add('show');
+}
+function wbHideSettings(){
+  document.getElementById('wbSettings').classList.remove('show');
+}
+function wbSaveSettings(){
+  LS.set('wb_token', document.getElementById('wbTokenInput').value.trim());
+  LS.set('wb_repo', document.getElementById('wbRepoInput').value.trim() || 'jamychen/junyu');
+  wbHideSettings();
+  alert('设置已保存');
+}
+
+// --- 云端同步 ---
+async function wbSyncUp(silent){
+  if(!wbGH().has){ wbShowSettings(); return; }
+  if(!silent) alert('开始备份到 GitHub...');
+  try{
+    const items = await wbDBAll();
+    const data = JSON.stringify({version:1, exported_at:wbNow(), count:items.length, problems:items});
+    await wbGHUpload(data, `错题本备份: ${items.length} 道题 (${wbNow()})`);
+    if(!silent) alert(`备份成功！共 ${items.length} 道题`);
+  }catch(e){
+    if(!silent) alert('备份失败: '+e.message);
+  }
+}
+async function wbSyncDown(){
+  if(!wbGH().has){ wbShowSettings(); return; }
+  if(!confirm('从云端恢复错题？这将覆盖本地数据。')) return;
+  try{
+    const data = await wbGHDownload();
+    if(!data || !data.problems){
+      alert('云端暂无错题数据');
+      return;
+    }
+    await wbDBClear();
+    for(const p of data.problems){
+      await wbDBPut(p);
+    }
+    wbRenderList();
+    alert(`恢复成功！共 ${data.problems.length} 道题`);
+  }catch(e){
+    alert('恢复失败: '+e.message);
+  }
+}
 </script>
 </body>
 </html>
