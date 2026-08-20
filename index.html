@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="theme-color" content="#3a76d8">
 <title>高一学习助手 · 理科</title>
+<meta name="version" content="20260820-v3-mindmap">
 <style>
 :root{
   --blue:#3a76d8; --green:#2ea040; --red:#d33; --orange:#b26a00;
@@ -635,11 +636,13 @@ function renderContent(){
     ['knowledge','知识点'],['exam','考点精析'],['examples','典型例题'],['exams','历年真题'],['note','我的笔记']
   ].map(([k,t])=>`<div class="tab ${curTab===k?'active':''}" onclick="switchTab('${k}')">${t}</div>`).join('');
   let body = '';
-  const subjIcons = {'语文':'📖','数学':'📐','英语':'🔤','物理':'⚡','化学':'🧪','生物':'🧬'};
+  const subjIcons = {'语文':'📖','数学':'📐','英语':'🔤','物理':'⚡','化学':'flask','生物':'🧬'};
   const subjIcon = subjIcons[subj.subject] || '📚';
+  const flaskSvg = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4.2 18.4A2 2 0 006 21.4h12a2 2 0 001.8-3L14 8.5V2"/><path d="M9 2h6"/><path d="M7.5 14h9"/></svg>';
+  const iconHtml = subjIcon === 'flask' ? flaskSvg : `<span style="font-size:20px">${subjIcon}</span>`;
   if(curTab==='knowledge'){
     body = ch.knowledge && ch.knowledge.length ? ch.knowledge.map((k,i)=>
-      `<div class="kp"><div class="kp-t"><span style="font-size:20px">${subjIcon}</span><span>${esc(k.title)}</span></div><div class="kp-c">${formatContent(k.content)}</div></div>`).join('')
+      `<div class="kp"><div class="kp-t">${iconHtml}<span>${esc(k.title)}</span></div><div class="kp-c">${formatContent(k.content)}</div></div>`).join('')
       : '<div class="empty">暂无内容</div>';
   } else if(curTab==='exam'){
     body = ch.exam_points && ch.exam_points.length ? ch.exam_points.map((e,i)=>
