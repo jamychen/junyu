@@ -8,7 +8,9 @@
 仓库根目录的 `index.html` 是自包含网页版，包含全部 6 科 75 章内容，手机浏览器直接打开即可使用。
 部署到 GitHub Pages 后，任何设备访问网址即可学习，无需安装。
 
-**在线访问**：部署后将显示为 `https://<用户名>.github.io/<仓库名>/`
+**在线访问**：[https://jamychen.github.io/junyu/](https://jamychen.github.io/junyu/)
+
+> 手机浏览器打开上方链接即可使用，无需安装。支持章节导航、知识点/考点/例题查看、随堂笔记（localStorage 本地保存）、跨科搜索、学习进度标记。
 
 ## 功能特点
 
