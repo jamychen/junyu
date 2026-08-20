@@ -173,6 +173,12 @@ a{color:var(--blue)}
 .ex .ex-q .ex-label{color:#fff;background:var(--green)}
 .ex .ex-an .ex-label{color:#fff;background:var(--orange)}
 .ex .ex-ans .ex-label{color:#fff;background:var(--blue)}
+/* === 文言文逐句对照（彩色配对+下划线） === */
+.wywy-pair{margin:6px 0;padding:8px 12px;border-radius:8px;background:#fafbfc;transition:background .2s}
+.wywy-pair:active{background:#f0f4ff}
+.wywy-orig{font-weight:600;font-size:16px;line-height:2;letter-spacing:.5px}
+.wywy-trans{font-size:14px;line-height:1.8;margin-top:4px;padding-left:12px;border-left:3px solid;opacity:.75}
+.wywy-imp{text-decoration:underline;text-decoration-style:wavy;text-decoration-color:#e74c3c;text-decoration-thickness:1.5px;text-underline-offset:4px;font-weight:700}
 /* === 历年真题 === */
 .pe{margin:0 0 14px;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .pe .pe-h{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f5f7fa;border-bottom:1px solid var(--line);font-size:13px;flex-wrap:wrap}
@@ -503,6 +509,36 @@ function formatContent(s){
   }
   return html;
 }
+/* === 文言文逐句对照渲染 === */
+function formatWywy(s, impSet){
+  if(!s) return formatContent(s);
+  if(s.indexOf('\u3010\u539f\u6587\u3011') === -1) return formatContent(s);
+  var colors = ['#1565c0','#2e7d32','#7b1fa2','#e65100','#00695c','#c62828','#4527a0','#283593','#ad1457','#37474f'];
+  var html = '';
+  var parts = s.split(/\u3010\u539f\u6587\u3011/);
+  for(var i = 1; i < parts.length; i++){
+    var part = parts[i];
+    var sp = part.split(/\u3010\u89e3\u91ca\u3011/);
+    var orig = (sp[0]||'').trim();
+    var trans = (sp[1]||'').trim();
+    var color = colors[(i-1) % colors.length];
+    var origHtml = esc(orig);
+    if(impSet && impSet.size > 0){
+      impSet.forEach(function(imp){
+        var escImp = esc(imp);
+        if(imp && origHtml.indexOf(escImp) !== -1){
+          origHtml = origHtml.split(escImp).join('<span class="wywy-imp">' + escImp + '</span>');
+        }
+      });
+    }
+    html += '<div class="wywy-pair" style="color:' + color + '">';
+    html += '<div class="wywy-orig">' + origHtml + '</div>';
+    if(trans) html += '<div class="wywy-trans" style="border-color:' + color + '">' + esc(trans).replace(/\n/g,'<br>') + '</div>';
+    html += '</div>';
+  }
+  if(!html) return formatContent(s);
+  return html;
+}
 /* 富文本渲染：自动检测表格、段落、高亮化学式 */
 function renderRichContent(text){
   if(!text) return '';
@@ -703,9 +739,26 @@ function renderContent(){
   const flaskSvg = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4.2 18.4A2 2 0 006 21.4h12a2 2 0 001.8-3L14 8.5V2"/><path d="M9 2h6"/><path d="M7.5 14h9"/></svg>';
   const iconHtml = subjIcon === 'flask' ? flaskSvg : `<span style="font-size:20px">${subjIcon}</span>`;
   if(curTab==='knowledge'){
-    body = ch.knowledge && ch.knowledge.length ? ch.knowledge.map((k,i)=>
-      `<div class="kp"><div class="kp-t">${iconHtml}<span>${esc(k.title)}</span></div><div class="kp-c">${formatContent(k.content)}</div></div>`).join('')
-      : '<div class="empty">暂无内容</div>';
+    var impSet = new Set();
+    if(ch.knowledge){
+      ch.knowledge.forEach(function(k){
+        if(k.title && k.title.indexOf('\u5e38\u8003') !== -1){
+          var matches = k.content.match(/[\u2460-\u2469\u246a-\u246e][\s\S]*?(?=[\u2460-\u2469\u246a-\u246e]|$)/g);
+          if(matches){
+            matches.forEach(function(m){
+              var t = m.replace(/^[\u2460-\u246e]/,'').trim();
+              if(t) impSet.add(t);
+            });
+          }
+        }
+      });
+    }
+    body = ch.knowledge && ch.knowledge.length ? ch.knowledge.map((k,i)=>{
+      if(k.title && (k.title.indexOf('\u539f\u6587\u4e0e\u9010\u53e5') !== -1 || k.title.indexOf('\u539f\u6587\u4e0e\u7ffb\u8bd1') !== -1)){
+        return `<div class="kp"><div class="kp-t">${iconHtml}<span>${esc(k.title)}</span></div><div class="kp-c">${formatWywy(k.content, impSet)}</div></div>`;
+      }
+      return `<div class="kp"><div class="kp-t">${iconHtml}<span>${esc(k.title)}</span></div><div class="kp-c">${formatContent(k.content)}</div></div>`;
+    }).join('') : '<div class="empty">暂无内容</div>';
   } else if(curTab==='mindmap'){
     body = ch.mindmaps && ch.mindmaps.length ? ch.mindmaps.map((m,i)=>
       `<div class="kp"><div class="kp-t">${iconHtml}<span>${esc(m.title)}</span></div><div class="kp-c mm-visual">${enrichMm(m.html)}</div></div>`).join('')
