@@ -518,7 +518,7 @@ function formatWywy(s, impSet){
   var parts = s.split(/\u3010\u539f\u6587\u3011/);
   for(var i = 1; i < parts.length; i++){
     var part = parts[i];
-    var sp = part.split(/\u3010\u89e3\u91ca\u3011/);
+    var sp = part.split(/\u3010(?:\u89e3\u91ca|\u7ffb\u8bd1)\u3011/);
     var orig = (sp[0]||'').trim();
     var trans = (sp[1]||'').trim();
     var color = colors[(i-1) % colors.length];
